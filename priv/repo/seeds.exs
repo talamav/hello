@@ -16,6 +16,5 @@
 alias Hello.Accounts.User
 alias Hello.Repo
 
-
 %User{name: "Nittin", age: 18}
 |> Repo.insert!()

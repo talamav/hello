@@ -16,11 +16,17 @@ defmodule HelloWeb.Endpoint do
   #
   # You should set gzip to true if you are running phx.digest
   # when deploying your static files in production.
+
+  # example.com/favicon.ico
+  # example.com/assets/logo.png
+  # example.com/assets/js/tracker.js
+
   plug Plug.Static,
     at: "/",
     from: :hello,
     gzip: false,
-    only: ~w(assets fonts images favicon.ico robots.txt)
+    only: ~w(assets fonts img images favicon.ico robots.txt)
+
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
